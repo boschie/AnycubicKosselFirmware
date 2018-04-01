@@ -1,0 +1,139 @@
+Arduino: 1.8.5 (Linux), Board:"Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)"
+
+In file included from sketch/HAL.h:89:0,
+                 from sketch/Repetier.h:597,
+                 from sketch/HAL.cpp:1:
+sketch/HAL.cpp: In function 'void __vector_22()':
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                       ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:833:81: note: in expansion of macro 'WRITE'
+         if((pwm_pos_set[PWM_FAN1] = (pwm_pos[PWM_FAN1] & COOLER_PWM_MASK)) > 0) WRITE(FAN_PIN, 1);
+                                                                                 ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                    ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:833:81: note: in expansion of macro 'WRITE'
+         if((pwm_pos_set[PWM_FAN1] = (pwm_pos[PWM_FAN1] & COOLER_PWM_MASK)) > 0) WRITE(FAN_PIN, 1);
+                                                                                 ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:833:81: note: in expansion of macro 'WRITE'
+         if((pwm_pos_set[PWM_FAN1] = (pwm_pos[PWM_FAN1] & COOLER_PWM_MASK)) > 0) WRITE(FAN_PIN, 1);
+                                                                                 ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                                              ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:833:81: note: in expansion of macro 'WRITE'
+         if((pwm_pos_set[PWM_FAN1] = (pwm_pos[PWM_FAN1] & COOLER_PWM_MASK)) > 0) WRITE(FAN_PIN, 1);
+                                                                                 ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                       ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:938:99: note: in expansion of macro 'WRITE'
+         if(pwm_pos_set[PWM_FAN1] == pwm_count_cooler && pwm_pos_set[PWM_FAN1] != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                   ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                    ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:938:99: note: in expansion of macro 'WRITE'
+         if(pwm_pos_set[PWM_FAN1] == pwm_count_cooler && pwm_pos_set[PWM_FAN1] != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                   ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:938:99: note: in expansion of macro 'WRITE'
+         if(pwm_pos_set[PWM_FAN1] == pwm_count_cooler && pwm_pos_set[PWM_FAN1] != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                   ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                                              ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:938:99: note: in expansion of macro 'WRITE'
+         if(pwm_pos_set[PWM_FAN1] == pwm_count_cooler && pwm_pos_set[PWM_FAN1] != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                   ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                       ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:944:119: note: in expansion of macro 'WRITE'
+         if((MAX_FAN_PWM & COOLER_PWM_MASK) == pwm_count_cooler && (MAX_FAN_PWM & COOLER_PWM_MASK) != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                                       ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                    ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:944:119: note: in expansion of macro 'WRITE'
+         if((MAX_FAN_PWM & COOLER_PWM_MASK) == pwm_count_cooler && (MAX_FAN_PWM & COOLER_PWM_MASK) != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                                       ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:944:119: note: in expansion of macro 'WRITE'
+         if((MAX_FAN_PWM & COOLER_PWM_MASK) == pwm_count_cooler && (MAX_FAN_PWM & COOLER_PWM_MASK) != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                                       ^
+fastio.h:29: error: 'DIOORIG_FAN2_PIN_PIN' was not declared in this scope
+ #define  _WRITE(IO, v)   do { if (v) {DIO ##  IO ## _WPORT |= MASK(DIO ## IO ## _PIN); } else {DIO ##  IO ## _WPORT &= ~MASK(DIO ## IO ## _PIN); }; } while (0)
+                                                                                                                              ^
+sketch/fastio.h:17:30: note: in definition of macro 'MASK'
+  #define  MASK(PIN)    (1 << PIN)
+                              ^
+sketch/fastio.h:48:25: note: in expansion of macro '_WRITE'
+ #define  WRITE(IO, v)   _WRITE(IO, v)
+                         ^
+sketch/HAL.cpp:944:119: note: in expansion of macro 'WRITE'
+         if((MAX_FAN_PWM & COOLER_PWM_MASK) == pwm_count_cooler && (MAX_FAN_PWM & COOLER_PWM_MASK) != COOLER_PWM_MASK) WRITE(FAN_PIN, 0);
+                                                                                                                       ^
+exit status 1
+'DIOORIG_FAN2_PIN_WPORT' was not declared in this scope
+
+Dit rapport zou meer informatie bevatten met
+"Uitgebreide uitvoer weergeven tijden compilatie"
+optie aan in Bestand -> Voorkeuren.
+

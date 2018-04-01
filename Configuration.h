@@ -45,7 +45,7 @@
 // ################ END MANUAL SETTINGS ##########################
 
 #undef FAN_PIN
-#define FAN_PIN ORIG_FAN2_PIN
+#define FAN_PIN HEATER_2_PIN
 #undef FAN_BOARD_PIN
 #define FAN_BOARD_PIN -1
 #define BOARD_FAN_SPEED 255
