@@ -164,7 +164,7 @@
 
 // ############# Heated bed configuration ########################
 
-#define HAVE_HEATED_BED 0
+#define HAVE_HEATED_BED 1
 #define HEATED_BED_PREHEAT_TEMP 55
 #define HEATED_BED_MAX_TEMP 120
 #define SKIP_M190_IF_WITHIN 3
@@ -523,12 +523,12 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_MIN_TEMPERATURE 150
 #define FEATURE_AUTOLEVEL 1
 #define FEATURE_SOFTWARE_LEVELING 0
-#define Z_PROBE_X1 20
-#define Z_PROBE_Y1 20
-#define Z_PROBE_X2 160
-#define Z_PROBE_Y2 20
-#define Z_PROBE_X3 20
-#define Z_PROBE_Y3 160
+#define Z_PROBE_X1 0
+#define Z_PROBE_Y1 60
+#define Z_PROBE_X2 52
+#define Z_PROBE_Y2 -30
+#define Z_PROBE_X3 -52
+#define Z_PROBE_Y3 -30
 #define BED_LEVELING_METHOD 0
 #define BED_CORRECTION_METHOD 0
 #define BED_LEVELING_GRID_SIZE 5
@@ -841,7 +841,7 @@ Values must be in range 1..255
     "servo2Pin": -1,
     "servo3Pin": -1,
     "featureWatchdog": "0",
-    "hasHeatedBed": "0",
+    "hasHeatedBed": "1",
     "enableZProbing": "1",
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
@@ -961,12 +961,12 @@ Values must be in range 1..255
     "zProbeStartScript": "",
     "zProbeFinishedScript": "",
     "featureAutolevel": "1",
-    "zProbeX1": 20,
-    "zProbeY1": 20,
-    "zProbeX2": 160,
-    "zProbeY2": 20,
-    "zProbeX3": 20,
-    "zProbeY3": 160,
+    "zProbeX1": 0,
+    "zProbeY1": 60,
+    "zProbeX2": 52,
+    "zProbeY2": -30,
+    "zProbeX3": -52,
+    "zProbeY3": 30,
     "zProbeSwitchingDistance": 1,
     "zProbeRepetitions": 1,
     "zProbeEveryPoint": "",
